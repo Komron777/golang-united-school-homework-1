@@ -1,8 +1,8 @@
-package homework1
+package solution
 
 import "github.com/kyokomi/emoji"
 
-func HelloWithEmoji () string{
+func GetMessage() string{
 	world := ":world_map:"
 	return emoji.Sprint("Hello ",world,"!")
 }

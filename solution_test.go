@@ -1,4 +1,4 @@
-package homework1
+package solution
 
 import (
 	"fmt"
@@ -6,10 +6,12 @@ import (
 )
 
 func Test_Hello(t *testing.T) {
-	got := HelloWithEmoji()
+	got := GetMessage()
 	want := "Hello 🗺️ !"
 	fmt.Println(want)
 	if got != want {
-		t.Errorf("got %q, want %q",got,want)
+		t.Failed()
+		//t.Errorf("got %q, want %q",got,want)
 	}	
 }
+	
